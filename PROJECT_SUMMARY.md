@@ -16,6 +16,17 @@ AI App Builder is a planning and workflow product for mobile app ideas. The code
 - analytics and admin dashboards
 - PDF export code on the Flutter side
 
+## Screenshot status
+
+- Web screenshots added from the real running Next.js app:
+  - `docs/images/web/home.png`
+  - `docs/images/web/login.png`
+  - `docs/images/web/signup.png`
+  - `docs/images/web/dashboard.png`
+  - `docs/images/web/new-project.png`
+- Flutter screenshots not captured: Flutter SDK not available on PATH
+- Supabase screenshots not added because there is no backend UI surface to capture in this repository
+
 ## What is incomplete
 
 - fully verified AI generation flow from prompt to persisted output

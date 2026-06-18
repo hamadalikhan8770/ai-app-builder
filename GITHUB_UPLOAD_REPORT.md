@@ -49,6 +49,18 @@ Ignored during packaging because they are generated, local-machine-specific, or 
 - `LAUNCH_GUIDE.md`
 - `REPAIR_LOG.md`
 
+## Screenshot assets added
+
+- `docs/images/web/home.png`
+- `docs/images/web/login.png`
+- `docs/images/web/signup.png`
+- `docs/images/web/dashboard.png`
+- `docs/images/web/new-project.png`
+
+Flutter screenshots were not captured because Flutter SDK is not available on PATH in this environment.
+
+Supabase screenshots were not added because this repository does not include a backend UI to capture.
+
 ## Real stats summary
 
 - Frontend files counted in `web/app`, `web/components`, `web/lib`: 110
@@ -68,6 +80,7 @@ Ignored during packaging because they are generated, local-machine-specific, or 
 - `supabase/config.toml` is missing, so local Supabase startup was not verified
 - Several product flows remain partial or placeholder-level
 - Real authenticated end-to-end testing against a live Supabase project is Not verified yet
+- Flutter screenshots are still pending until Flutter is installed and runnable from this machine
 
 ## Job-readiness score
 

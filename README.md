@@ -38,22 +38,44 @@ This repository is an existing project recovery and stabilization upload. It is 
 
 ## Interface preview
 
-Real screenshots are not committed in the current repository yet.
+### Web App Screenshots
 
-Recommended capture targets after starting the web app locally:
+The screenshots below were captured from the real running Next.js app on `http://127.0.0.1:3000`.
 
-- `/`
-- `/login`
-- `/signup`
-- `/dashboard`
-- `/dashboard/projects/new`
+#### Home
 
-Recommended screenshot location for future updates:
+![Web home interface](./docs/images/web/home.png)
 
-- `docs/images/home.png`
-- `docs/images/login.png`
-- `docs/images/dashboard.png`
-- `docs/images/new-project.png`
+#### Login
+
+![Web login interface](./docs/images/web/login.png)
+
+#### Signup
+
+![Web signup interface](./docs/images/web/signup.png)
+
+#### Dashboard
+
+This dashboard capture shows the real local preview state when Supabase environment variables are not configured.
+
+![Web dashboard interface](./docs/images/web/dashboard.png)
+
+#### New Project
+
+This capture shows the real project creation screen in local preview mode.
+
+![Web new project interface](./docs/images/web/new-project.png)
+
+### Flutter App Screenshots
+
+Flutter screenshots were not captured: Flutter SDK not available on PATH.
+
+### Backend/Supabase Structure
+
+There are no backend UI screens in this repository. The backend is structured as:
+
+- `supabase/migrations/`: database schema, policies, and SQL changes
+- `supabase/functions/`: Edge Functions for teams, marketplace, admin actions, analytics, and usage tracking
 
 ## Current backend model
 
