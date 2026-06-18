@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import Badge from '@/components/ui/Badge';
+import type { AppProject } from '@/lib/dashboard/types';
+export default function ProjectCard({ project }: { project: AppProject }) { const title=project.name || project.title || 'Untitled project'; return <Link href={`/dashboard/projects/${project.id}`} className="card block transition hover:bg-white/10"><div className="flex items-start justify-between gap-4"><div><h3 className="font-black">{title}</h3><p className="mt-2 line-clamp-2 text-sm text-slate-400">{project.description || 'No description yet.'}</p></div><Badge tone="green">{project.status || 'draft'}</Badge></div><p className="mt-4 text-xs text-slate-500">{project.target_platform || 'iOS + Android'} • {project.selected_stack || 'Flutter + Supabase'}</p></Link>; }

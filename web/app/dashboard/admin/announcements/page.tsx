@@ -1,0 +1,1 @@
+import AnnouncementForm from '@/components/admin/AnnouncementForm';export default function Page(){return <div className='mx-auto max-w-3xl space-y-6'><h1 className='text-3xl font-black'>Announcements</h1><AnnouncementForm/></div>}

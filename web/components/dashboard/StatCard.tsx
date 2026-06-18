@@ -1,0 +1,1 @@
+export default function StatCard({ label, value, helper }: { label: string; value: string | number; helper?: string }) { return <div className="card"><p className="text-sm text-slate-400">{label}</p><p className="mt-2 text-3xl font-black">{value}</p>{helper && <p className="mt-2 text-sm text-slate-500">{helper}</p>}</div>; }

@@ -1,0 +1,30 @@
+# PROJECT_SUMMARY
+
+## What this project is
+
+AI App Builder is a planning and workflow product for mobile app ideas. The codebase is organized around a Flutter client, a web dashboard, and a Supabase backend.
+
+## What is implemented
+
+- marketing site
+- auth UI
+- dashboard shell
+- project creation and listing
+- generated-output viewing
+- marketplace browsing and template workflows
+- teams schema and Edge Functions
+- analytics and admin dashboards
+- PDF export code on the Flutter side
+
+## What is incomplete
+
+- fully verified AI generation flow from prompt to persisted output
+- fully verified backend wiring in a local environment
+- fully verified Flutter rebuild and source test execution in this machine state
+- some web flows still marked TODO or presented as MVP/placeholder states
+
+## Best current interpretation
+
+This repository is closest to a product that helps users move from app idea to structured app blueprint using templates, stored outputs, collaboration features, analytics, and export tools.
+
+It is not verified yet as a complete production-ready code generator platform from this checkout alone.

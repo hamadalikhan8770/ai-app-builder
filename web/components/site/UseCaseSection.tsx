@@ -1,0 +1,2 @@
+import { useCases } from '@/lib/constants';
+export default function UseCaseSection() { return <section className="section"><h2 className="text-3xl font-black">Built for modern app creators.</h2><div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{useCases.map(([title,body])=><div key={title} className="card"><h3 className="font-black">{title}</h3><p className="mt-3 text-slate-400">{body}</p></div>)}</div></section>; }

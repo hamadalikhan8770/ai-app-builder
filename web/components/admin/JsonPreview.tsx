@@ -1,0 +1,1 @@
+export default function JsonPreview({value}:{value:unknown}){return <pre className='max-h-80 overflow-auto rounded-2xl bg-slate-950/70 p-4 text-xs text-slate-300'>{JSON.stringify(value,null,2)}</pre>}

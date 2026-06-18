@@ -1,0 +1,31 @@
+name: my_first_app
+description: "AI App Builder mobile app."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  go_router: ^16.3.0
+  supabase_flutter: ^2.10.3
+  intl: ^0.20.2
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  share_plus: ^12.0.1
+  path_provider: ^2.1.5
+  package_info_plus: ^9.0.0
+  device_info_plus: ^12.2.0
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

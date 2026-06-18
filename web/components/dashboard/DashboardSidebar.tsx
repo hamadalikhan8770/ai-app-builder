@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import type { Profile } from '@/lib/dashboard/types';
+const links=[['/dashboard','Overview'],['/dashboard/projects','Projects'],['/dashboard/templates','Templates'],['/dashboard/outputs','Outputs'],['/dashboard/teams','Teams'],['/dashboard/usage','Usage'],['/dashboard/settings','Settings']];
+export default function DashboardSidebar({ profile }: { profile: Profile | null }) { return <aside className="hidden w-72 shrink-0 border-r border-white/10 bg-slate-950/90 p-5 lg:block"><Link href="/" className="text-xl font-black">AI App Builder</Link><nav className="mt-8 space-y-2">{links.map(([href,label])=><Link key={href} href={href} className="block rounded-2xl px-4 py-3 text-sm font-bold text-slate-300 hover:bg-white/10 hover:text-white">{label}</Link>)}{profile?.role === 'admin' && <Link href="/dashboard/admin" className="block rounded-2xl px-4 py-3 text-sm font-bold text-amber-200 hover:bg-white/10">Admin</Link>}</nav></aside>; }

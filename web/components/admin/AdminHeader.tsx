@@ -1,0 +1,2 @@
+import LogoutButton from '@/components/dashboard/LogoutButton';
+export default function AdminHeader(){return <div className='sticky top-0 z-40 flex items-center justify-between border-b border-white/10 bg-slate-950/85 px-5 py-4 backdrop-blur'><div><p className='text-sm text-amber-200'>Admin</p><h1 className='font-black'>Platform Management</h1></div><div className='flex items-center gap-3'><a className='btn-secondary xl:hidden' href='/dashboard/admin/overview'>Admin Menu</a><LogoutButton/></div></div>}

@@ -1,0 +1,1 @@
+export default function EmptyState({ title, message }: { title: string; message: string }) { return <div className="card text-center"><h3 className="text-lg font-black">{title}</h3><p className="mt-2 text-slate-400">{message}</p></div>; }

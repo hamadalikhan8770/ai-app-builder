@@ -1,0 +1,3 @@
+import Button from '@/components/ui/Button';
+import type { GeneratedOutput } from '@/lib/dashboard/types';
+export default function OutputCard({ output }: { output: GeneratedOutput }) { return <div className="card"><div className="flex items-start justify-between gap-4"><div><h3 className="font-black">{output.title || output.output_type || 'Generated output'}</h3><p className="mt-1 text-sm text-slate-400">{output.app_projects?.name || output.app_projects?.title || 'Project'}</p></div><Button variant="secondary" onClick={() => navigator.clipboard?.writeText(output.content || '')}>Copy</Button></div><pre className="mt-4 max-h-48 overflow-auto whitespace-pre-wrap rounded-2xl bg-slate-950/70 p-4 text-sm text-slate-300">{output.content || 'No content.'}</pre></div>; }

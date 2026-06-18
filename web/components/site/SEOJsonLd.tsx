@@ -1,0 +1,2 @@
+import { siteUrl } from '@/lib/constants';
+export default function SEOJsonLd(){const data={ '@context':'https://schema.org', '@type':'SoftwareApplication', name:'AI App Builder', applicationCategory:'DeveloperApplication', operatingSystem:'iOS, Android, Web', description:'Plan, generate, and manage iOS and Android app projects with AI-powered templates, collaboration, and PDF exports.', offers:{'@type':'Offer', price:'0', priceCurrency:'USD'}, url:siteUrl}; return <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(data)}} />;}

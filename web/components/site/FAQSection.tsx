@@ -1,0 +1,2 @@
+import { faqs } from '@/lib/constants';
+export default function FAQSection({limit}:{limit?:number}) { const items=limit?faqs.slice(0,limit):faqs; return <section className="section"><h2 className="text-3xl font-black">Frequently asked questions.</h2><div className="mt-10 grid gap-4">{items.map(([q,a])=><details key={q} className="card"><summary className="cursor-pointer font-bold">{q}</summary><p className="mt-3 text-slate-400">{a}</p></details>)}</div></section>; }

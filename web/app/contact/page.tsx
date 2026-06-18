@@ -1,0 +1,4 @@
+import ContactForm from '@/components/site/ContactForm';
+import NewsletterForm from '@/components/site/NewsletterForm';
+export const metadata={title:'Contact',description:'Contact AI App Builder support or join the newsletter.'};
+export default function Page(){return <main className='section'><div className='mb-10 max-w-2xl'><h1 className='text-4xl font-black'>Contact us</h1><p className='mt-3 text-slate-400'>Questions, feedback, partnerships, or support requests — send us a message.</p><p className='mt-2 text-slate-400'>Email: support@example.com</p></div><div className='grid gap-8 lg:grid-cols-2'><ContactForm/><div className='card'><NewsletterForm source='contact'/></div></div></main>}

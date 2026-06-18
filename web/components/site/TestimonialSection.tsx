@@ -1,0 +1,2 @@
+const quotes=['Cut app planning time from days to minutes.','The template marketplace makes client discovery easier.','A practical bridge between product ideas and implementation.'];
+export default function TestimonialSection(){return <section className="section"><h2 className="text-3xl font-black">Loved by builders.</h2><div className="mt-10 grid gap-5 md:grid-cols-3">{quotes.map((q,i)=><div key={q} className="card"><p className="text-slate-300">“{q}”</p><p className="mt-4 font-bold">Beta user {i+1}</p></div>)}</div></section>}

@@ -1,0 +1,4 @@
+import Badge from '@/components/ui/Badge';
+import Button from '@/components/ui/Button';
+import type { MarketplaceTemplate } from '@/lib/dashboard/types';
+export default function TemplateCard({ template }: { template: MarketplaceTemplate }) { return <div className="card"><div className="flex items-start justify-between gap-4"><div><p className="text-sm text-blue-200">{template.category}</p><h3 className="mt-1 font-black">{template.title}</h3></div><Badge tone={template.access_type === 'premium' ? 'amber' : 'green'}>{template.access_type || 'free'}</Badge></div><p className="mt-3 text-sm text-slate-400">{template.short_description}</p><div className="mt-5 flex gap-2"><Button href={`/templates`} variant="secondary">Preview</Button><Button href={`/dashboard/templates?template=${template.id}`}>Use Template</Button></div></div>; }

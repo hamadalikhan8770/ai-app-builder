@@ -1,0 +1,4 @@
+import AdminTable from '@/components/admin/AdminTable';
+import AdminStatusBadge from '@/components/admin/AdminStatusBadge';
+import { getAdminProjects } from '@/lib/admin/queries';
+export default async function Page(){const rows=await getAdminProjects(); return <div className='space-y-6'><h1 className='text-3xl font-black'>All Projects</h1><AdminTable headers={['Title','Owner','Platform','Stack','Status','Created','Updated']}>{rows.map(p=><tr key={p.id}><td className='px-4 py-3'>{p.name||p.title||'Untitled'}</td><td className='px-4 py-3'>{p.owner_user_id||p.user_id||'—'}</td><td className='px-4 py-3'>{p.target_platform||'—'}</td><td className='px-4 py-3'>{p.selected_stack||'—'}</td><td className='px-4 py-3'><AdminStatusBadge status={p.status}/></td><td className='px-4 py-3'>{p.created_at||'—'}</td><td className='px-4 py-3'>{p.updated_at||'—'}</td></tr>)}</AdminTable></div>}
