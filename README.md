@@ -149,7 +149,8 @@ supabase functions deploy generate-daily-usage-report
 
 - `web`: `npm run build` passed
 - `web`: `npm run lint` passed
-- `web`: local server boot on `http://127.0.0.1:3000` passed
+- `web`: local server boot on `http://127.0.0.1:3010` passed in the latest live environment pass
+- `web`: route checks passed for `/`, `/login`, `/signup`, `/dashboard`, `/dashboard/projects/new`
 - `web`: `/dashboard` no longer crashes when env is missing
 - Flutter source rebuild: Not verified yet
 - Supabase local stack: Not verified yet

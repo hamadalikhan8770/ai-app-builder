@@ -4,9 +4,8 @@ All numbers below were measured from the local repository during the upload pass
 
 ## Repository facts
 
-- Git status before upload: Not a git repository yet
-- Total counted source and project files for upload review: 373
-- Focused app/doc files counted across `lib`, `web/app`, `web/components`, `web/lib`, `supabase`, `test`, `scripts`, `docs`: 224
+- Tracked files in the current repository: 379
+- Focused app/doc files counted across `lib`, `web/app`, `web/components`, `web/lib`, `supabase`, `test`, `scripts`, `docs`: 248
 - Total measured lines across the focused app/doc set: 8921
 
 ## Language breakdown by measured lines
@@ -63,7 +62,8 @@ All numbers below were measured from the local repository during the upload pass
 
 - Web build (`npm run build`): Passed
 - Web lint (`npm run lint`): Passed
-- Web route smoke checks: Passed
+- Web runtime (`npm run start -- --hostname 127.0.0.1 --port 3010`): Passed
+- Web route smoke checks: Passed for `/`, `/login`, `/signup`, `/dashboard`, `/dashboard/projects/new`
 - Flutter source build from this environment: Not verified yet
 - Flutter test suite execution from this environment: Not verified yet
 - Local Supabase stack: Not verified yet
