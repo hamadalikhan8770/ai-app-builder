@@ -11,7 +11,7 @@ This project has three parts:
 ## Web app setup
 
 ```powershell
-cd C:\Users\abasi\OneDrive\Desktop\my_first_app\web
+cd web
 Copy-Item .env.local.example .env.local
 npm install
 npm run build

@@ -5,7 +5,7 @@
 ### Next.js web app
 
 ```powershell
-cd C:\Users\abasi\OneDrive\Desktop\my_first_app\web
+cd web
 npm run build
 npm run start -- --hostname 127.0.0.1 --port 3000
 ```
@@ -21,7 +21,7 @@ Without Supabase env, dashboard opens in offline preview mode instead of crashin
 ### Existing compiled Flutter web artifact
 
 ```powershell
-cd C:\Users\abasi\OneDrive\Desktop\my_first_app\build\web
+cd build\web
 python -m http.server 54123 --bind 127.0.0.1
 ```
 
@@ -38,7 +38,7 @@ This serves the last built Flutter web artifact already present in the repo. It 
 Start from:
 
 ```powershell
-cd C:\Users\abasi\OneDrive\Desktop\my_first_app\web
+cd web
 Copy-Item .env.local.example .env.local
 ```
 

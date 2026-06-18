@@ -5,7 +5,7 @@
 ### Web build
 
 ```powershell
-cd C:\Users\abasi\OneDrive\Desktop\my_first_app\web
+cd web
 npm run build
 ```
 
@@ -14,7 +14,7 @@ Status: Passed during this upload pass.
 ### Web lint
 
 ```powershell
-cd C:\Users\abasi\OneDrive\Desktop\my_first_app\web
+cd web
 npm run lint
 ```
 
@@ -23,6 +23,7 @@ Status: Passed during this upload pass.
 ### Web route smoke checks
 
 ```powershell
+cd web
 curl.exe -I http://127.0.0.1:3000/
 curl.exe -I http://127.0.0.1:3000/login
 curl.exe -I http://127.0.0.1:3000/dashboard
@@ -34,7 +35,7 @@ Status: Passed during this upload pass.
 ### Existing built Flutter web artifact
 
 ```powershell
-cd C:\Users\abasi\OneDrive\Desktop\my_first_app\build\web
+cd build\web
 python -m http.server 54123 --bind 127.0.0.1
 curl.exe -I http://127.0.0.1:54123/
 ```

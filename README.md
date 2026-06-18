@@ -50,7 +50,7 @@ The backend is implemented through:
 ### 1. Web app
 
 ```powershell
-cd C:\Users\abasi\OneDrive\Desktop\my_first_app\web
+cd web
 Copy-Item .env.local.example .env.local
 npm install
 npm run build
@@ -126,13 +126,13 @@ supabase functions deploy generate-daily-usage-report
 
 ## Repository docs
 
-- [SETUP_GUIDE.md](C:\Users\abasi\OneDrive\Desktop\my_first_app\SETUP_GUIDE.md)
-- [TESTING_GUIDE.md](C:\Users\abasi\OneDrive\Desktop\my_first_app\TESTING_GUIDE.md)
-- [PROJECT_SUMMARY.md](C:\Users\abasi\OneDrive\Desktop\my_first_app\PROJECT_SUMMARY.md)
-- [REAL_STATS.md](C:\Users\abasi\OneDrive\Desktop\my_first_app\REAL_STATS.md)
-- [APP_AUDIT_REPORT.md](C:\Users\abasi\OneDrive\Desktop\my_first_app\APP_AUDIT_REPORT.md)
-- [LAUNCH_GUIDE.md](C:\Users\abasi\OneDrive\Desktop\my_first_app\LAUNCH_GUIDE.md)
-- [REPAIR_LOG.md](C:\Users\abasi\OneDrive\Desktop\my_first_app\REPAIR_LOG.md)
+- [SETUP_GUIDE.md](./SETUP_GUIDE.md)
+- [TESTING_GUIDE.md](./TESTING_GUIDE.md)
+- [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)
+- [REAL_STATS.md](./REAL_STATS.md)
+- [APP_AUDIT_REPORT.md](./APP_AUDIT_REPORT.md)
+- [LAUNCH_GUIDE.md](./LAUNCH_GUIDE.md)
+- [REPAIR_LOG.md](./REPAIR_LOG.md)
 
 ## Roadmap
 
