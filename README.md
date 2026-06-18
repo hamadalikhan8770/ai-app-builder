@@ -4,6 +4,8 @@ AI App Builder is a multi-surface app planning workspace built around Flutter, N
 
 This repository is an existing project recovery and stabilization upload. It is not a greenfield starter and it is not presented as feature-complete.
 
+The strongest verified part of the repository today is the Next.js web surface, which passed build, lint, runtime, and screenshot checks in the latest portfolio verification pass.
+
 ## Verified project structure
 
 - `lib/`: Flutter application code
@@ -40,7 +42,7 @@ This repository is an existing project recovery and stabilization upload. It is 
 
 ### Web App Screenshots
 
-The screenshots below were captured from the real running Next.js app on `http://127.0.0.1:3000`.
+The screenshots below were captured from the real running Next.js app during the latest local verification pass.
 
 #### Home
 
