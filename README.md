@@ -36,6 +36,25 @@ This repository is an existing project recovery and stabilization upload. It is 
 - Flutter project, marketplace, team, analytics, admin, and PDF export surfaces in source
 - Supabase Edge Functions for team, template, audit, and admin operations
 
+## Interface preview
+
+Real screenshots are not committed in the current repository yet.
+
+Recommended capture targets after starting the web app locally:
+
+- `/`
+- `/login`
+- `/signup`
+- `/dashboard`
+- `/dashboard/projects/new`
+
+Recommended screenshot location for future updates:
+
+- `docs/images/home.png`
+- `docs/images/login.png`
+- `docs/images/dashboard.png`
+- `docs/images/new-project.png`
+
 ## Current backend model
 
 There is no standalone Express, FastAPI, or custom Node backend in this repository.
